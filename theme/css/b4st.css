@@ -4,12 +4,13 @@
 
 /* Sticky Footer */
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
+
 main {
-    flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 .site-header-image {
@@ -18,9 +19,13 @@ main {
 }
 
 .wp-caption {}
+
 .wp-caption-text {}
+
 .sticky {}
+
 .screen-reader-text {}
+
 .gallery-caption {}
 
 .bypostauthor {}
@@ -63,12 +68,34 @@ img,
 
 /* Hide form placeholders on focus */
 
-input:focus::-webkit-input-placeholder { color: transparent; }
-input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
-textarea:focus::-webkit-input-placeholder { color: transparent; }
-textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input:focus:-moz-placeholder {
+	color: transparent;
+}
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+/* FF 19+ */
+textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+
+/* FF 4-18 */
+textarea:focus::-moz-placeholder {
+	color: transparent;
+}
+
+/* FF 19+ */
 
 /* Comments */
 
@@ -91,13 +118,21 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 	margin-bottom: 1rem;
 }
 
-.comment > .children {
+.comment>.children {
 	margin-top: 1rem;
 	margin-right: -0.625rem;
 	margin-bottom: -1.625rem;
 }
-/* Site footer */
 
-#navbar {
-	position: sticky;
+/* Site footer */
+.navbar {
+	background: darkslategrey;
+	padding: 0;
+}
+.navbar.compressed {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #6dcc7c;
+	color: #6dcc7c;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }

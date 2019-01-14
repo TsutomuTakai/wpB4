@@ -6,7 +6,7 @@
 
 	'use strict';
 
-	$(document).ready(function() {
+	$(document).ready(function () {
 
 		// Comments
 
@@ -23,8 +23,16 @@
 		$('.pagination .dots').addClass('page-link').parent().addClass('disabled');
 
 		//You can put your own code in here
-		
-		
+
+		$(window).on("scroll", function () {
+			if ($(window).scrollTop() >= 20) {
+				$(".navbar").addClass("compressed");
+			} else {
+				$(".navbar").removeClass("compressed");
+			}
+		});
+
+
 	});
 
 }(jQuery));

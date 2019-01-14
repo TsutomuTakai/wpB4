@@ -11,8 +11,8 @@
 
 <?php b4st_navbar_before();?>
 
-<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-  <div class="container">
+<nav id="navbar" class="navbar navbar-expand-md  sticky-top">
+  <div  class="container navCont ">
 
     <?php b4st_navbar_brand();?>
 

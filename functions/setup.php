@@ -41,6 +41,16 @@ if ( ! function_exists('b4st_setup') ) {
 		) );
 
 		add_theme_support('automatic-feed-links');
+		//logo image
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 80,
+				'width'       => 80,
+				'flex-width'  => false,
+				'flex-height' => false,
+			)
+		);
 	}
 }
 add_action('init', 'b4st_setup');
